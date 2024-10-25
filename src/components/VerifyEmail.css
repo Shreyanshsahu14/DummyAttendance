@@ -1,0 +1,71 @@
+.verify-container {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 50vh; 
+  
+    padding: 50px;
+  }
+  .verify-button {
+    margin-left: 38%;
+    margin-top: 40px;
+    width: 28%;
+    padding: 12px;
+    background-color: #830005;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .signup-button:hover {
+    background-color: #aa4324;
+  }
+  .signup-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .signup-footer a {
+    color: #ac4e51;
+    text-decoration: none;
+  }
+  
+  .signup-footer a:hover {
+    text-decoration: underline;
+  }
+  /* Container for the OTP input */
+.otp-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 6px;
+}
+
+/* Styles for each OTP input field */
+.otp-input {
+  width: 48px;
+  height: 48px; /* Set square aspect */
+  /* box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.18); */
+  background-color: #e2e0e0; /* Equivalent to bg-richblack-800 */
+  border: 20px;
+  border-radius: 0.5rem;
+  color: #d1d5db; /* Equivalent to text-richblack-5 */
+  text-align: center;
+  border-color: black;
+}
+
+.otp-input:focus {
+  outline: 2px solid #fbbf24; /* Equivalent to outline-yellow-50 */
+  border: 20px;
+}
+
+/* Larger width for large screens */
+@media (min-width: 1024px) {
+  .otp-input {
+    width: 60px;
+    height: 60px;
+  }
+}
